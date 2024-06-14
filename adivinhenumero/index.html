@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogo de Adivinhação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #444;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        #resultado {
+            font-size: 1.5em;
+            color: #0066cc;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo de Adivinhação</h1>
+    <p>Digite um número entre 1 e 100:</p>
+    <input type="number" id="numeroUsuario" min="1" max="100">
+    <button onclick="verificarNumero()">Verificar</button>
+    <button onclick="jogarDeNovo()">Jogar de novo</button>
+    <p id="resultado"></p>
+
+    <script>
+        function verificarNumero() {
+            var numeroUsuario = document.getElementById('numeroUsuario').value;
+            
+            if (numeroUsuario < 1 || numeroUsuario > 100) {
+                document.getElementById('resultado').textContent = "Por favor, insira um número entre 1 e 100.";
+                return;
+            }
+            
+            var numeroAleatorio = Math.floor(Math.random() * 100) + 1;
+            
+            if (numeroUsuario == numeroAleatorio) {
+                document.getElementById('resultado').textContent = "Parabéns! Você acertou o número.";
+            } else if (numeroUsuario > numeroAleatorio) {
+                document.getElementById('resultado').textContent = "Você passou do número. O número era " + numeroAleatorio + ".";
+            } else {
+                document.getElementById('resultado').textContent = "Você ficou abaixo do número. O número era " + numeroAleatorio + ".";
+            }
+        }
+
+        function jogarDeNovo() {
+            document.getElementById('numeroUsuario').value = '';
+            document.getElementById('resultado').textContent = '';
+        }
+    </script>
+</body>
+</html>
