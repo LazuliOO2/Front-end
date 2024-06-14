@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de namoro</title>
+
+    <style>
+        body{
+            background-color: red;
+
+        }
+        .painel{
+          background-color: white;
+          margin: auto;
+            width: 500px;
+            height: 500px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 50px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #sim{
+        
+         height: 40px;
+         width: 60px;
+         background-color: red;
+         border:2px solid white;
+         border-radius: 10px;
+         color:white;
+         margin-left: -50px;
+        }
+        #não{
+         position: absolute;
+         height: 40px;
+         width: 60px;
+         background-color: red;
+         border:2px solid white;
+         border-radius: 10px;
+         color:white;
+         margin-left: 10px;
+        
+        }
+    </style>
+
+</head>
+<body>
+    <div class="painel">
+        <h1>Feliz Dias dos Namorados</h1>
+        <img src="https://gifman.net/wp-content/uploads/2019/06/ursinho-fofo-eu-te-amo.gif" alt="">
+
+        <h2>Aceita namorar comigo?</h2>
+        
+        <button id="sim" onclick="parabens()">Sim!</button>
+        <button onmouseover="fuja()" id="não">Não!</button>
+
+        
+    </div>
+    <script>
+        function fuja(){
+            var botaoNao = document.getElementById("não")
+            
+            var larguraJanela = window.innerWidth;
+            var alturaJanela = window.innerHeight;
+
+            var maxX = larguraJanela - botaoNao.offsetWidth;
+            var maxY = alturaJanela - botaoNao.offsetHeight;
+
+            var aleatorioX = Math.floor(Math.random() * maxX);
+            var aleatorioY = Math.floor(Math.random() * maxY);
+
+            botaoNao.style.left = aleatorioX + "px";
+            botaoNao.style.top = aleatorioY + "px";
+        }
+        function parabens(){
+            alert("Parabéns,você fez uma sabia escolha :)")
+        }
+    </script>
+    
+</body>
+</html>
