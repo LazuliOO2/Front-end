@@ -1,0 +1,23 @@
+canvas{
+    border: 1px solid black;
+    display: block;
+    margin: 0 auto;
+    background-image: url('0e6ec2f3-79c3-4800-b33a-976585c879de.png');
+    background-size: cover;
+   }
+ 
+   .score {
+    position: relative; /* Alterado para posição relativa */
+    margin-top: 10px; /* Adicionado um espaçamento superior */
+    text-align: center; /* Centralizado horizontalmente */
+    font-size: 20px;
+    color: black;
+}
+
+.button-container {
+    text-align: center; /* Centraliza horizontalmente */
+}
+
+.button {
+    margin: 10px; /* Adiciona um espaçamento entre os botões */
+}
