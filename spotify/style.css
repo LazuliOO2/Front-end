@@ -1,0 +1,55 @@
+body {
+    background-image: linear-gradient(
+        rgb(41,2,15),
+        rgb(254,162,0),
+        rgb(41,2,15)
+    );
+    display: flex;
+    height: 100vh;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: hidden;
+}
+h3 {
+/*margin para cria margin seria um espaçamento o primeira valor é para cima o 2 direita o 3 baixo e 4 esquerda */   
+    margin: 1em 0em 0em 0em;
+}
+
+#tempo{
+    height: 3px;
+    background-color:rgb(139,153,156) ;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+#barra-de-progresso{
+    --progress:0%;
+    background-color: white;
+    width: var(--progress);
+    height: inherit;
+    border-radius: 2px;
+    cursor:pointer;
+    
+}
+#ambos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#botoes {
+    height: 100px;
+    margin-top: 20px;
+}
+
+i {
+    font-size: 70px;
+    padding: 20px;
+}
+img {
+    display: flex;
+    height: 750px;
+    margin: auto;
+
+}
