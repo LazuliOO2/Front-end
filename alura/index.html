@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Olimpíadas</title>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<body>
+<!--Utilizaremos uma biblioteca bootstrap para agilizar o desenvolvimento.Para usar ela basta cola a cdn dela no head e utilizar as class para estilizar os elementos  -->
+    <header>
+<!--container-fluid: Cria um contêiner de largura total para o conteúdo do cabeçalho.-->
+        <div class="container-fluid" id="navegacao">
+<!--row: Divide o contêiner em linhas para layout.-->
+            <div class="row">
+<!--d-flex: Habilita o layout flexbox para a barra de navegação,justify-content-between: Alinha os itens de navegação nas extremidades esquerda e direita do contêiner.-->
+                <nav class="col d-flex justify-content-between">
+<!--d-inline-block: Faz com que a barra de pesquisa e os links de navegação sejam exibidos em blocos embutidos para arranjo horizontal.-->
+                    <div id="busca" class="d-inline-block">
+                        <input type="text" id="esporteInput" placeholder="Digite um esporte">
+                        <button onclick="pesquisarEsporte()">Pesquisar</button>
+                    </div>
+<!--ms-auto: Aplica uma margem à direita para posicionar os links de navegação à direita.-->
+                    <div class="d-inline-block ms-auto">
+<!--nav: Define a barra de navegação,Usamos também link href com # isso significa que ele vai processa a href na página utilizaremos isso para que possamos navegar com esse href para seção desejada ele vai procura um id correspondente a nome do href caso voce quera usar class ao inves de id basta troca # para .-->
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="#Sobre">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Serviços">Serviços</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Testemunho">Testemunho</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#Contatos">Contatos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+   
+    <div id="conjInicio">
+       <h1 class="inicio" style="color: white;" id="PrimTit">Atletas do Brasil</h1>
+       <div class="botoes">
+           <button class="botao" style="background: linear-gradient(to bottom,#6a1b9a, #512da8);" id="botaoServico">Serviços</button>
+           <button class="botao" style="background-color: white;color: rgb(88, 71,110);" id="botaoDif">Entra em contato</button>
+       </div>
+       <i class="fa-solid fa-arrow-right" id="seta"></i>
+       <section id="Sobre">  
+    </div>
+    
+    <div id="bemvindo">
+          <h1>Atletas do Brasil</h1>
+          <p class="apresP">Explorando o mundos do esportes olímpicos</p>
+          <div id="barra"></div>
+          <p id="pApres" class="apresP">Na Atletas do Brasil, nos dedicamos a mergulhar nas vidas e conquistas dos atletas olímpicos. Com uma profunda paixão por esportes e um olhar atento aos detalhes, nossa equipe de pesquisadores trabalha incansavelmente para  trazer a você os últimos insights e histórias do mundo dos esportes olímpicos. Desde descobrir talentos ocultos até  celebrar performances que quebram recordes, estamos comprometidos em mostrar as jornadas extraordinárias desses atletas. Quer você esteja interessado em aprender sobre momentos de conquista de medalhas, rotinas de treinamento   nos bastidores ou o impacto do espírito esportivo, a Atletas do Brasil está aqui para fornecer a você uma perspectiva única sobre o mundo dos atletas olímpicos.</p>
+    </div>
+</section>
+    <div class="animacao">
+        <div class="item">
+            <i class="fas fa-star estrela"></i>
+            <span class="mensagem">Vamos explorar o mundo dos atletas olímpicos juntos</span>
+        </div>
+        <div class="item">
+            <i class="fas fa-star estrela"></i>
+            <span class="mensagem">Vamos explorar o mundo dos atletas olímpicos juntos</span>
+        </div>
+        <div class="item">
+            <i class="fas fa-star estrela"></i>
+            <span class="mensagem">Vamos explorar o mundo dos atletas olímpicos juntos</span>
+        </div>
+        <div class="item">
+          <i class="fas fa-star estrela"></i>
+          <span class="mensagem">Vamos explorar o mundo dos atletas olímpicos juntos</span>
+      </div>
+      <section id="Serviços">
+    </div> 
+    
+    <div id="hist">
+       <h1>Esportes olímpicos e Atletas da Historia</h1>
+       <p style="font-size: 2em;">Digite o nome do esporte (Taekwondo, Skate ou Futebol) e descubra histórias e  incríveis atletas que marcaram época nas Olimpíadas.</p>
+    </div>
+    <section id="Testemunho">
+    <div class="bainers">
+        <div id="chegou" class="subBane" >
+          <h6 class="titBane">Quando chegou no Brasil</h6>
+          <img src="img/chegoutake.jfif" alt="imagem de um lutador" class="imgBane">
+          <p>A modalidade foi introduzida no país em 1970, trazida por mestres coreanos como Sang Min Cho, que fundaram a primeira academia em São Paulo. A partir daí, o Taekwondo se espalhou rapidamente por todo o território nacional, conquistando adeptos de todas as idades e classes sociais.</p>
+        </div>
+        <div id="olímpicos" class="subBane">
+           <h6 class="titBane">Virou esporte olímpico</h6>
+           <img src="img/olimptake.jfif" alt="imagem de uma atleta" class="imgBane">
+           <p>Em 1980, o Taekwondo foi reconhecido como esporte olímpico e, em 2000, fez sua estreia nos Jogos Olímpicos de Sydney. Essa inclusão nos Jogos Olímpicos impulsionou ainda mais a prática da modalidade em todo o mundo, inclusive no Brasil.</p>
+        </div>
+        <div id="atletas" class="subBane">
+           <h6 class="titBane">Atletas em destaque</h6>
+           <img src="img/atlettake.jfif" alt="imagem de uma atleta" class="imgBane">
+           <p>Josiane Trevisan: Uma das principais atletas brasileiras da modalidade, Josiane participou de diversas edições dos Jogos Olímpicos e conquistou importantes títulos internacionais.
+           Natália Falavigna: Outra grande nome do Taekwondo brasileiro, Natália também representou o país em diversas competições internacionais e conquistou medalhas importantes.</p>
+        </div>
+   </div>
+</section>
+
+   <div class="comentario">
+    <div id="trasp">
+        <div class="texto">
+            <i class="fas fa-quote-left" id="aspas"></i>
+            <h6 style="color: rgb(26,1,54);" id="titCom">Francisco Soares</h6>
+            <div class="circulos">
+              <div class="circulo ativo" id="circulo1" onclick="mudarComentario(1)"></div>
+              <div class="circulo inativo" id="circulo2" onclick="mudarComentario(2)"></div>
+              <div class="circulo inativo" id="circulo3" onclick="mudarComentario(3)"></div>
+              <div class="circulo inativo" id="circulo4" onclick="mudarComentario(4)"></div>    
+          </div>
+            <p id="pCom">Explorar o mundo dos atletas olímpicos com Atletas do Brasil tem sido uma experiência transformadora. Sua cobertura aprofundada e comentários perspicazes me deram uma nova apreciação pelo trabalho duro e sacrifício necessários para alcançar a grandeza nos esportes. Eu recomendo fortemente sua plataforma a todos os entusiastas de esportes.</p>
+        </div>
+    </div>
+</section>
+</div>
+<section id="Contatos">
+<h1 id="titCont" style="color: rgb(26,1,54);">Entre em contato conosco para mais</h1> <h1 id="subCont" style="color: rgb(26,1,54);"> informações</h1>
+<div class="contact-info">
+    <div class="section">
+      <h2 style="color: rgb(60,0,150);">Contato</h2>
+      <p>atletasbrasil@olimpiadas.com</p>
+      <p>646-675-9914</p>
+    </div>
+    <div class="section">
+      <h2 style="color: rgb(60,0,150);">Localização</h2>
+      <p>Belo Horizonte Lourdes, Minas Gerais</p>
+      <p>Brasil</p>
+    </div>
+    <div class="section">
+      <h2  style="color: rgb(60,0,150);">Horário de Funcionamento</h2>
+      <p>Segunda a sexta</p>
+      <p>9:00 da manhã - 7:30 da noite</p>
+    </div>
+  </div>
+  <div id="final">
+    <div id="textFinal">
+      <p>Sobre Serviços Testemunho Contato</p>
+    </div>
+    <div id="direitos">
+      <p>&copy; All rights Reserved. Atletas do Brasil</p>
+    </div>
+  </div>
+</section>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
