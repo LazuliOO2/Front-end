@@ -1,3 +1,5 @@
+# Porque Alura ? 
+Eu fiz esse projeto na aula da imersão da Alura com o Google Gemini. Após as aulas, teria uma competição, então foi esse site que eu decidi fazer para a competição.
 # Estrutura HTML
 
 **Cabeçalho**: Define o título da página, metadados e links para arquivos CSS externos, incluindo o Bootstrap para facilitar o layout e o Font Awesome para ícones.
@@ -37,3 +39,11 @@
 # Animação com CSS
 
 Foi a primeira vez que fiz animação com CSS e, como eu queria fazer algo novo, já que tinha um pouco de conhecimento sobre HTML, CSS e JS, decidi colocar essa animação. Achei fácil de fazer e irei aprofundar mais meu conhecimento em animação.
+
+# Funcionamento
+O projeto está atualmente versionado no Vercel.
+Você pode ver o código-fonte também no meu outro repositório no Vercel.
+Ele atualmente está com um problema de alinhamento, dependendo do seu navegador. O item pode ficar alinhado de maneira errada.
+Nesse repositório, recomendo fortemente utilizar o Google para evitar esse erro.
+No repositório da Vercel, onde você consegue ver o site através da Vercel, ele está alinhado errado com o Google, mas com o Edge está correto.
+O projeto ainda está incompleto; em breve, atualizarei a versão na Vercel para torná-lo responsivo para os demais dispositivos. Neste aqui, não pretendo trazer a atualização e deixá-lo como está.
