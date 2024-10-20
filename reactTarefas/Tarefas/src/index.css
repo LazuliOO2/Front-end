@@ -9,11 +9,6 @@ ul {
       text-decoration: none !important;
   }
 
-  html, body {
-    height: 100%; /* Isso garante que o corpo não ultrapasse 100% da altura */
-    overflow-x: hidden; /* Evitar rolagem horizontal se não for necessária */
-  }
-
 #navegação{
   background-color: rgb(21,21,37);
   color: white;
@@ -141,10 +136,14 @@ input[type="text"] {
   text-overflow: ellipsis; /* Essa propriedade controla como o texto que extrapola o espaço disponível é tratado. Quando combinada com as outras propriedades, faz com que uma reticência seja exibida no final do texto cortado, indicando que há mais conteúdo */
 }
 
-#Aspas{
-  font-size: 60px;
-  color: rgb(75,18,109);
-}
+/* transform: translate(-50%, -50%)
+-50% no eixo X: Isso move o ícone para a esquerda 50% da sua própria largura.
+-50% no eixo Y: Isso move o ícone para cima 50% da sua própria altura.
+Quando usamos translate com valores positivos, o elemento é movido:
+Para a direita no eixo X.
+Para baixo no eixo Y.
+*/
+
 
 
 

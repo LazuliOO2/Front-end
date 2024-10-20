@@ -76,15 +76,18 @@ export const Button = styled.button`
     background-color: rgb(220, 225, 225); /* Levemente mais escuro no hover */
   }
 `;
+
 export const CardContainer = styled.div`
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap:'20px';
   background-color: #61aaf7;
   border-radius: 12px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  height: 150px;
-  overflow: hidden; /* Evita que o conteúdo ultrapasse as bordas */
+  height:150px;
+  width:300px;
+  gap:20px;
   transition: transform 0.2s ease-in-out;
 /* O hover pseudo-classe é usada para aplicar estilos a um elemento quando o mouse está sobre ele*/
 /* transform: scale(1.05): Essa propriedade aplica uma transformação ao elemento, neste caso, uma escala. O valor 1.05 significa que o elemento será aumentado em 5% em todas as direções (largura e altura). É por isso que o card parece crescer quando o mouse passa sobre ele */
@@ -94,15 +97,13 @@ export const CardContainer = styled.div`
 `;
 
 export const IconContainer = styled.div`
-  width: 40px; /* Largura fixa para a área da seta */
-  background-color: #3b86d1;
   display: flex;
+  background-color:#3b86d1;
+  width: 40px;
+  height: 100%;
+  flex-shrink: 0; /* Impede que a largura mude */
   align-items: center;
   justify-content: center;
-
-  /* Ocupa toda a altura do Card */
-  height: 100%; 
-  flex-shrink: 0; /* Impede que a largura mude */
 
   span {
     font-size: 24px;
@@ -112,11 +113,8 @@ export const IconContainer = styled.div`
 `;
 
 export const CardContent = styled.div`
-  padding: 20px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
-
   h2 {
     margin: 0;
     font-size: 18px;
@@ -129,60 +127,6 @@ export const CardContent = styled.div`
     color: #f1f1f1;
   }
 `;
-export const CardContainer2 = styled.div`
-  display: flex;
-  align-items: center;
-  background-color: #61aaf7;
-  border-radius: 12px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  height: 400px;
-  overflow: hidden; /* Evita que o conteúdo ultrapasse as bordas */
-  transition: transform 0.2s ease-in-out;
-/* O hover pseudo-classe é usada para aplicar estilos a um elemento quando o mouse está sobre ele*/
-/* transform: scale(1.05): Essa propriedade aplica uma transformação ao elemento, neste caso, uma escala. O valor 1.05 significa que o elemento será aumentado em 5% em todas as direções (largura e altura). É por isso que o card parece crescer quando o mouse passa sobre ele */
-  &:hover {
-    transform: scale(1.05);
-  }
-`;
-
-export const IconContainer2 = styled.div`
-  width: 40px; /* Largura fixa para a área da seta */
-  background-color: #3b86d1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  /* Ocupa toda a altura do Card */
-  height: 100%; 
-  flex-shrink: 0; /* Impede que a largura mude */
-
-  span {
-    font-size: 24px;
-    color: white;
-    transform: rotate(0deg); /* Centraliza a seta para frente */
-  }
-`;
-
-export const CardContent2 = styled.div`
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h2 {
-    margin: 0;
-    font-size: 18px;
-    color: white;
-  }
-
-  p {
-    margin: 5px 0 0;
-    font-size: 14px;
-    color: #f1f1f1;
-  }
-`;
-
 
 
 export default SocialIcons;
