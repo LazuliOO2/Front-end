@@ -1,0 +1,154 @@
+ul {
+  /* Utilizamos o inherit e none para tira estilização por padrao que vem com a tag*/
+      color: inherit;
+      text-decoration: none;
+  }
+  /*Usamos !important para que seja a regra mais importante */
+  a{
+      color: inherit !important;
+      text-decoration: none !important;
+  }
+
+#navegação{
+  background-color: rgb(21,21,37);
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; 
+}
+
+#PrimTit {
+  text-align: center;
+  color: red;
+  padding-top: 150px;
+}
+
+.inputTarefa {
+  width: 80%; /* Definindo a largura do input */
+  max-width: 180px; /* Definindo um limite máximo para não ficar muito largo */
+  height: 35px; /* Ajusta a altura do input */
+  padding: 5px; /* Ajuste interno */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  color: #333;
+  background-color: #ffa500; /* Cor laranja */
+}
+.botaoAdicionar {
+  background-color: #ffa500; /* Cor laranja */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#tarefas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  min-height: 150px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-left: auto;
+  margin-right: auto;
+  transition: height 0.3s ease-in-out;
+}
+
+.tarefa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.remover {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  flex: 1; /* Faz o input ocupar mais espaço */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#Sobre {
+  display: flex;
+  background-color: rgb(21, 21, 37); /* Fundo escuro */
+  color: white; /* Texto branco */
+  padding: 20px;
+  align-items: stretch; /* Garante que todos os elementos tenham a mesma altura */
+  height: 300px; /* Faz a seção ocupar a altura da tela */
+ padding-left: 25%;
+ scroll-margin-top: 40px;
+}
+
+#Sobre h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0;
+  white-space: nowrap;
+}
+
+#barra {
+  width: 5px;
+  background-color: rgb(98, 182, 239); /* Cor da barra */
+  height: auto; /* Ajuste automático baseado na altura do contêiner pai */
+  min-height: 100%; /* Garante que a barra tenha pelo menos a altura do contêiner */
+  margin: 0 15px; /* Espaço entre o texto e a descrição */
+}
+
+#DescSobre {
+  max-width: 600px; /* Limite de largura do texto */
+}
+
+#DescSobre h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#DescSobre p {
+  display: -webkit-box; /* Essa propriedade, específica para navegadores baseados em Webkit (como Safari e Chrome), transforma o elemento em um container flexbox. O flexbox é um modelo de layout que permite organizar e redimensionar elementos de forma flexível. */
+  -webkit-line-clamp: 6; /* Define o tamanho das linhas */
+  -webkit-box-orient: vertical; /*efine a orientação do container flexbox. Neste caso, "vertical" significa que os itens dentro do container serão organizados verticalmente. */
+  overflow: hidden; /* Esconde o texto que ultrapassa 6 linhas */
+  line-height: 1.6; /* Ajusta o espaçamento entre as linhas */
+  font-size: 1rem;
+  text-overflow: ellipsis; /* Essa propriedade controla como o texto que extrapola o espaço disponível é tratado. Quando combinada com as outras propriedades, faz com que uma reticência seja exibida no final do texto cortado, indicando que há mais conteúdo */
+}
+
+/* transform: translate(-50%, -50%)
+-50% no eixo X: Isso move o ícone para a esquerda 50% da sua própria largura.
+-50% no eixo Y: Isso move o ícone para cima 50% da sua própria altura.
+Quando usamos translate com valores positivos, o elemento é movido:
+Para a direita no eixo X.
+Para baixo no eixo Y.
+*/
+#messageInput::placeholder {
+  text-align: start; /* Alinha o placeholder ao topo */
+  line-height: normal; /* Certifique-se que o line-height está normal */
+}
+
+
+
+
