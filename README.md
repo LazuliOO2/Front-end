@@ -27,3 +27,7 @@ Tecnologias: HTML, CSS, JavaScript.
 # Spotify Simples
 Descrição: Implementei um site com musicas porém o estilo não seria igual a spotify.
 Tecnologias: HTML,CSS e JS.
+
+# React
+Descrição:Uma lista de tarefas com react 
+Tecnologias:HTML,CSS(bootstrap),JS e react
