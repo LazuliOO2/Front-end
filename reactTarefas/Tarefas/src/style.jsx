@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 import TarefasImg from './tarefas.webp';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 function SocialIcons() {
   return (
@@ -27,12 +27,13 @@ export const BackgroundContainer = styled.div`
   height: 900px; /* Ajuste conforme necessário */
 `;
 
-export const SubNav = styled.div`
+export const SubNavContainer = styled.div`
   background-color: rgb(21, 21, 37); /* Fundo escuro */
   padding: 40px;
   text-align: center;
   color: white; /* Texto em branco */
 `;
+
 
 export const Title = styled.h1`
   font-size: 2rem;
@@ -128,5 +129,104 @@ export const CardContent = styled.div`
   }
 `;
 
+const moverEsquerda = keyframes`
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+`;
+
+export const AnimacaoContainer = styled.div`
+  background: white;
+  color: rgb(51,130,209);
+  height: 95px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+`;
+
+export const Item = styled.div`
+  display: flex;
+  align-items: center;
+  animation: ${moverEsquerda} 10s linear infinite;
+`;
+
+export const Estrela = styled.i`
+  margin-right: 10px;
+  color: rgb(51,130,209);
+`;
+
+export const Mensagem = styled.span`
+  white-space: nowrap;
+  margin-right: 30px;
+  font-size: 1.5em;
+`;
+
+export const InputContainer = styled.div`
+  position: relative;
+  margin-bottom: 16px;
+`;
+
+export const Label = styled.label`
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 8px;
+`;
+
+export const InputField = styled.input`
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* Espaço para o asterisco à direita */
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+`;
+
+export const Asterisk = styled.span`
+  position: absolute;
+  right: 10px;
+  top: 75%;
+  transform: translateY(-50%);
+  color: black; /* Cor do asterisco */
+`;
+
+export const FooterContainer = styled.footer`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(21,21,37); /* cor de fundo */
+  color: #fff;
+`;
+
+export const FooterText = styled.p`
+  margin: 0;
+  font-size: 14px;
+`;
+
+export const SocialIconsFooter = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+
+export const Icon = styled.a`
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #3b5998; /* Cor base, você pode mudar para cada rede */
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
 
 export default SocialIcons;

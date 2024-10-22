@@ -1,7 +1,9 @@
 // App.js
-import React, { useState, useRef } from 'react';
-import SocialIcons, { BackgroundContainer, SubNav, Title, Description, ButtonContainer, Button, CardContainer, IconContainer, CardContent } from './style.jsx';
+import React, { useState, useRef,useEffect } from 'react';
+import SocialIcons, { BackgroundContainer, SubNavContainer,Title, Description, ButtonContainer, Button, CardContainer, IconContainer, CardContent, AnimacaoContainer, Item, Estrela, Mensagem,InputContainer , Label,InputField, Asterisk,FooterContainer, FooterText ,Icon,SocialIconsFooter } from './style.jsx';
+import SubNav from './subnav.jsx';
 import './index.css';
+import tarefa from './img2.webp';
 import { v4 as uuidv4 } from 'uuid';
 
 function App() {
@@ -84,6 +86,52 @@ function App() {
       </div>
     );
   };
+  const Animacao = () => {
+    return (
+      <AnimacaoContainer>
+        <Item>
+          <Estrela className="fas fa-star" />
+          <Mensagem>©Todos os direitos reservados.Lista de tarefas</Mensagem>
+        </Item>
+        <Item>
+          <Estrela className="fas fa-star" />
+          <Mensagem>©Todos os direitos reservados.Lista de tarefas</Mensagem>
+        </Item>
+        <Item>
+          <Estrela className="fas fa-star" />
+          <Mensagem>©Todos os direitos reservados.Lista de tarefas</Mensagem>
+        </Item>
+        <Item>
+          <Estrela className="fas fa-star" />
+          <Mensagem>©Todos os direitos reservados.Lista de tarefas</Mensagem>
+        </Item>
+      </AnimacaoContainer>
+    );
+  };
+
+  function SmoothScroll() {
+    useEffect(() => {
+      const anchors = document.querySelectorAll('.nav-link');
+  
+      anchors.forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetElement = document.querySelector(this.getAttribute('href'));
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+          });
+        });
+      });
+  
+      return () => {
+        anchors.forEach((anchor) => {
+          anchor.removeEventListener('click', () => {});
+        });
+      };
+    }, []);
+  
+    return null; // SmoothScroll não precisa renderizar nada
+  }
 
   return (
     <>
@@ -92,6 +140,7 @@ function App() {
           <div className="row">
             <nav className="col d-flex justify-content-between">
               <div className="d-inline-block ms-auto" style={{ paddingRight: '200px' }}>
+              <SmoothScroll />
                 <ul className="nav">
                   <li className="nav-item"><a className="nav-link" href="#Sobre">Sobre</a></li>
                   <li className="nav-item"><a className="nav-link" href="#Serviços">Serviços</a></li>
@@ -132,16 +181,9 @@ function App() {
           </p>
         </div>
       </div>
-
-      <SubNav>
-        <Title>Nossas Características</Title>
-        <Description>Ferramentas inovadoras para aprimorar sua experiência de gerenciamento de tarefas.</Description>
-        <ButtonContainer>
-          <Button className="contato">Contato</Button>
-          <Button className="avaliacao">Avaliação</Button>
-        </ButtonContainer>
-      </SubNav>
-
+<div id="Serviços">
+      <SubNav />
+</div>   
       <div style={{ display: 'flex', gap: '30px', width: '100%', background: 'rgb(21,21,37)', alignItems: 'center', justifyContent: 'center' }}>
         <CardContainer>
           <IconContainer><span>➔</span></IconContainer>
@@ -192,9 +234,52 @@ function App() {
           </CardContent>
         </CardContainer>
       </div>
-
       {/* Círculos e Testemunhos */}
+  <div id="Testemunho">
       <CirculosComponent />
+  </div>
+      {/* Animacao */}
+      <Animacao />
+      <div style={{ background: 'rgb(21,21,37)', paddingTop: '50px', width: '100%', display: 'flex',justifyContent:'center',alignItems:'center' }}>
+  <img src={tarefa} alt="Tarefas" style={{ paddingLeft: '50px', width: '700px' }} />
+  <div style={{ color: 'white', paddingLeft: '50px' }}>
+    <h1>Entrar em contato</h1>
+    <h1>Conosco</h1>
+    <p>Fique à vontade para entrar em contato para obter mais <br />informações</p>
+    <div style={{ color: 'rgb(102,186,241)', display: 'flex', gap: '22px' }}>
+      <i className='fa fa-envelope' style={{ marginTop:'5px' }}></i>
+      <span style={{ color: 'white' }}>emailteorico@gmail.com</span>
+      <i className='fa fa-phone'></i>
+      <span style={{ color: 'white' }}>2654-7785</span>
+    </div>
+    <div id="Contatos">
+    <InputContainer>
+      <Label>Nome</Label>
+      <InputField type="text" placeholder="Seu nome aqui" />
+      <Asterisk>*</Asterisk>
+    </InputContainer>
+    <InputContainer>
+      <Label>Email</Label>
+      <InputField type="text" placeholder="Seu email aqui" />
+      <Asterisk>*</Asterisk>
+    </InputContainer>
+    <InputContainer>
+      <Label>Mensagem</Label>
+      <InputField type="text" placeholder="Sua mensagem aqui" id='messageInput' style={{height:'150px',paddingBottom:'120px'}}/>
+    </InputContainer>
+    <Button className="contato">Enviar mensagem</Button>
+  </div>
+</div>
+</div>
+<FooterContainer>
+      <FooterText>© Todos os direitos reservados. ActiveZone Fitness</FooterText>
+      <SocialIconsFooter>
+        <Icon href="https://facebook.com" target="_blank">F</Icon>
+        <Icon href="https://twitter.com" target="_blank">T</Icon>
+        <Icon href="https://linkedin.com" target="_blank">in</Icon>
+      </SocialIconsFooter>
+    </FooterContainer>
+
     </>
   );
 }

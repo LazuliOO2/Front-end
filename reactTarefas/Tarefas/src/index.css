@@ -99,6 +99,7 @@ input[type="text"] {
   align-items: stretch; /* Garante que todos os elementos tenham a mesma altura */
   height: 300px; /* Faz a seção ocupar a altura da tela */
  padding-left: 25%;
+ scroll-margin-top: 40px;
 }
 
 #Sobre h1 {
@@ -143,6 +144,10 @@ Quando usamos translate com valores positivos, o elemento é movido:
 Para a direita no eixo X.
 Para baixo no eixo Y.
 */
+#messageInput::placeholder {
+  text-align: start; /* Alinha o placeholder ao topo */
+  line-height: normal; /* Certifique-se que o line-height está normal */
+}
 
 
 
