@@ -272,7 +272,7 @@ function App() {
 </div>
 </div>
 <FooterContainer>
-      <FooterText>© Todos os direitos reservados. ActiveZone Fitness</FooterText>
+      <FooterText>© Todos os direitos reservados.Lista de tarefas</FooterText>
       <SocialIconsFooter>
         <Icon href="https://facebook.com" target="_blank">F</Icon>
         <Icon href="https://twitter.com" target="_blank">T</Icon>
