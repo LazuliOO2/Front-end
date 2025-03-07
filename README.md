@@ -1,4 +1,9 @@
 # Front-end
+## 📌 Sobre este repositório
+> Alguns projetos ainda estão documentados no formato que usei quando comecei no desenvolvimento web. Futuramente, novos projetos trarão uma documentação mais estruturada como projeto alura, refletindo minha evolução.  
+
+---
+
 # Projetos Front-End no Repositório
 ### Relógio Dinâmico
 Descrição: Implementei um relógio dinâmico com base em um design que encontrei no YouTube.
