@@ -1,49 +1,59 @@
-# Porque Alura ? 
-Eu fiz esse projeto na aula da imersão da Alura com o Google Gemini. Após as aulas, teria uma competição, então foi esse site que eu decidi fazer para a competição.
-# Estrutura HTML
+# Porque Alura?
 
-**Cabeçalho**: Define o título da página, metadados e links para arquivos CSS externos, incluindo o Bootstrap para facilitar o layout e o Font Awesome para ícones.
+Este projeto foi desenvolvido durante a imersão da Alura com o Google Gemini. Após as aulas, foi anunciada uma competição, e este site foi minha escolha para participar.
 
-**Corpo**: Contém a estrutura principal do site, com seções para navegação, introdução, serviços, testemunhos e contato.
+## 🏗 Estrutura HTML
 
-**Seções**: Cada seção é definida por um elemento `<div>` com um ID único para facilitar a navegação via JavaScript.
+- **Cabeçalho**: Define o título da página, metadados e links para arquivos CSS externos, incluindo o Bootstrap para facilitar o layout e o Font Awesome para ícones.
+- **Corpo**: Contém a estrutura principal do site, com seções para navegação, introdução, serviços, testemunhos e contato.
+- **Seções**: Cada seção é definida por um elemento `<div>` com um ID único para facilitar a navegação via JavaScript.
+- **Elementos semânticos**: Utiliza elementos como `<header>`, `<nav>`, `<section>`, `<article>` para dar significado semântico ao conteúdo.
 
-**Elementos semânticos**: São utilizados elementos como `<header>`, `<nav>`, `<section>`, `<article>` para dar significado semântico ao conteúdo.
+## 🎨 Estilização CSS
 
-# Estilização CSS
+- **Bootstrap**: A biblioteca Bootstrap é utilizada para criar um layout responsivo e aplicar estilos predefinidos aos elementos.
+- **Estilos personalizados**: Além do Bootstrap, são definidos estilos personalizados para ajustar a aparência do site conforme a necessidade.
+- **Animações**: Utiliza propriedades CSS como `transition` e `animation` para criar efeitos de transição suaves entre elementos.
 
-**Bootstrap**: A biblioteca Bootstrap é utilizada para criar um layout responsivo e aplicar estilos predefinidos aos elementos.
+## ⚡ JavaScript
 
-**Estilos personalizados**: Além do Bootstrap, são definidos estilos personalizados para ajustar a aparência do site às necessidades específicas.
+- **Scroll suave**: Implementa um efeito de rolagem suave ao clicar nos links de navegação e botões.
+- **Pesquisa de esportes**: A função `pesquisarEsporte()` permite que o usuário encontre informações relevantes sobre um esporte.
+- **Comentários dinâmicos**: A função `mudarComentario()` permite alternar entre diferentes comentários, atualizando o texto e o nome do autor.
 
-**Animações**: São utilizadas as propriedades CSS `transition` e `animation` para criar efeitos de transição suaves entre os elementos.
+## 🚀 Destaques e Aprendizados
 
-# JavaScript
+- **Bootstrap**: Facilitou o desenvolvimento do layout responsivo e profissional.
+- **JavaScript interativo**: Criou interações dinâmicas, como a pesquisa de esportes e a troca de comentários.
+- **Animações CSS**: Tornou o site mais intuitivo e atraente.
+- **Organização do código**: O código está bem estruturado e comentado, facilitando a compreensão e manutenção.
 
-**Scroll suave**: O JavaScript é utilizado para criar um efeito de scroll suave ao clicar nos links de navegação e nos botões.
+## 🎞 Animação com CSS
 
-**Pesquisa de esportes**: A função `pesquisarEsporte()` permite que o usuário pesquise por um esporte e exibe informações relevantes sobre ele.
+Foi minha primeira experiência com animações em CSS. Como já possuía algum conhecimento em HTML, CSS e JavaScript, decidi adicionar animações ao projeto. Achei o processo intuitivo e pretendo aprofundar ainda mais meus conhecimentos nessa área.
 
-**Comentários dinâmicos**: A função `mudarComentario()` permite que o usuário alterne entre diferentes comentários, atualizando o texto e o nome do autor.
+## 🌐 Funcionamento
 
-# Destaques e Aprendizados
+O projeto está atualmente hospedado no Vercel.
 
-**Bootstrap**: A utilização do Bootstrap agilizou o desenvolvimento do layout, permitindo criar um site responsivo e profissional com menos código.
+- O código-fonte também está disponível em meu outro repositório na Vercel.
+- Existe um problema de alinhamento em diferentes navegadores. No Google Chrome, o alinhamento pode ficar incorreto. No Edge, a exibição está correta.
+- O projeto ainda não está finalizado. Em breve, atualizarei a versão responsiva na Vercel. No repositório atual, não pretendo trazer essa atualização.
 
-**JavaScript interativo**: O JavaScript foi utilizado para criar interações dinâmicas com o usuário, como a pesquisa de esportes e a alternância de comentários.
+## 📂 Estrutura do Projeto
 
-**Animações CSS**: As animações CSS foram utilizadas para tornar o site mais atraente e intuitivo.
+```
+📂 alura
+├── 📄 README.md  → Documentação principal
+├── 📂 img/ → imagem do projeto
+├── 📂 index.html/ → Conteúdo HTML,Conteúdo da página
+├── 📂 style.css/ → Conteúdo CSS, estilização da página
+├── 📂 script.js/ → Conteúdo JavaScript, Manipulador do DOM
 
-**Organização do código**: O código está bem organizado e comentado, facilitando a compreensão e a manutenção.
+## 📌 Contribuição
 
-# Animação com CSS
+Sinta-se à vontade para contribuir enviando um **Pull Request** ou abrindo uma **Issue**.
 
-Foi a primeira vez que fiz animação com CSS e, como eu queria fazer algo novo, já que tinha um pouco de conhecimento sobre HTML, CSS e JS, decidi colocar essa animação. Achei fácil de fazer e irei aprofundar mais meu conhecimento em animação.
+## 📜 Licença
 
-# Funcionamento
-O projeto está atualmente versionado no Vercel.
-Você pode ver o código-fonte também no meu outro repositório no Vercel.
-Ele atualmente está com um problema de alinhamento, dependendo do seu navegador. O item pode ficar alinhado de maneira errada.
-Nesse repositório, recomendo fortemente utilizar o Google para evitar esse erro.
-No repositório da Vercel, onde você consegue ver o site através da Vercel, ele está alinhado errado com o Google, mas com o Edge está correto.
-O projeto ainda está incompleto; em breve, atualizarei a versão na Vercel para torná-lo responsivo para os demais dispositivos. Neste aqui, não pretendo trazer a atualização e deixá-lo como está.
+Este projeto está sob a licença MIT.
