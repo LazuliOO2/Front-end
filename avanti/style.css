@@ -1,0 +1,428 @@
+#desconto{
+    background-color: rgb(0,92,255);
+    height: 30px;
+    color: white;
+}
+
+.search-box {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+  }
+  .search-box input::placeholder {
+    font-weight: bold;
+    color:rgb(64, 64,64);
+  }
+  
+  
+  .search-box input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .search-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .top-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: sans-serif;
+    margin-left: 100px;
+  }
+  
+  .user i {
+    font-size: 30px;
+    color: #007bff;
+  }
+  
+  .cart {
+    position: relative;
+    font-size: 20px;
+  }
+  
+  .cart i {
+    color: black;
+    color: transparent;
+  -webkit-text-stroke: 2px black;
+  }
+  
+  .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+ #DescontoMaior{
+    height: 500px;
+    background-color: rgb(231,231,234);
+ }
+ .texto-desconto{
+  margin-top: 100px;
+ }
+ #cadeira{
+height:500px;
+ }
+.pessoa{
+  height: 200px;
+}
+.Lançamento1 {
+  margin-left: 560px;
+  margin-top: 30px;
+}
+.VerMais1{
+  margin-right: 260px;
+  margin-top: 30px;
+}
+.seta-voltar {
+  top: 300px;
+  left: 530px;
+  transform: translateY(-50%);
+}
+.seta-avançar{
+  top: 280px;
+  right: 210px;
+}
+
+ .cards-wrapper {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  flex-shrink: 0;
+}
+
+.AreaPreco {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 8px;
+}
+.circle-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid rgb(0, 92, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  padding: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.circle-btn:focus,
+.circle-btn:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.circle-btn i {
+  color: rgb(0, 92, 255);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.circle-btn:hover {
+  background-color: rgb(0, 92, 255);
+}
+
+.circle-btn:hover i {
+  color: white;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.AreaPreco {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.preco-topo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.OriginalPreco {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+}
+
+.DescontoPedido {
+  background-color: #dff6f0;
+  color: #00b894;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.NovoPreco {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.Parcelamento {
+  font-size: 12px;
+  color: #444;
+  margin-top: 2px;
+}
+
+
+.botao-comprar {
+  background-color: #006aff;
+  color: #fff;
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botao-comprar:hover {
+  background-color: #004dcc;
+}
+
+.circulos {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.circulo {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3); /* cinza translúcido */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.circulo.ativo {
+  background-color: rgba(0, 0, 0, 0.8); /* mais escuro */
+}
+
+.circulo.inativo:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* hover */
+}
+
+.left-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.left-content h4 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.info-block {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.icon-circle {
+  background: #0066ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.icon-circle i {
+  color: white;
+  font-size: 24px;
+}
+
+.info-text {
+  color: #555;
+  max-width: 400px;
+}
+
+.right-content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.form-container {
+  background-color: #ddd; /* cinza claro */
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: fit-content;
+  font-family: sans-serif;
+  height: 150px;
+  margin-left: 600px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+.form-container .checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.form-container .checkbox-container a {
+  text-decoration: underline;
+  color: #555;
+}
+
+.form-container button {
+  background-color: #007bff; /* azul vibrante */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer {
+  background: #f4f4f4;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color: #007BFF;
+  font-size: 18px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.footer-section small {
+  color: #555;
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  gap: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#grupologo{
+  margin-left: 880px;
+}
+
+.dropdown-menu-custom {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 600px;
+  border-radius: 8px;
+}
+
+/* Mostra o dropdown ao passar o mouse */
+.menu-trigger:hover .dropdown-menu-custom {
+  display: block;
+}
+
+/* Estilização interna */
+.dropdown-menu-custom h6 {
+  font-weight: bold;
+}
+
+.dropdown-menu-custom ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-menu-custom ul li {
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.dropdown-menu-custom ul li:hover {
+  text-decoration: underline;
+}
+.menu-trigger:hover .dropdown-menu-custom {
+  display: block;
+}
+
