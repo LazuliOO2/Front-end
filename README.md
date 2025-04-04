@@ -50,3 +50,9 @@ Tecnologias: HTML,CSS e JS.
 ### React
 Descrição:Uma lista de tarefas com react 
 Tecnologias:HTML,CSS(bootstrap),JS e react
+
+---
+
+### Avanti
+Descrição:Um site que era teste para vaga de emprego
+Tecnologias:HTML,CSS(bootstrap) e JS
