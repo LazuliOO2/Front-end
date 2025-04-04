@@ -1,0 +1,110 @@
+@media (max-width:1440px) {
+   .Lançamento1{
+      margin-left: 220px;
+   }
+   .TodosCard {
+      max-width: 1048px; /* largura de 4 cards + gaps */
+      margin:0 auto;/* centraliza o carrossel */
+    }
+    .TodosCard2 {
+      max-width: 1048px; /* largura de 4 cards + gaps */
+      margin:0 auto;/* centraliza o carrossel */
+    }
+   .seta-voltar {
+      left: 190px; /* ajuste como preferir */
+    }
+    .seta-avançar{
+      right: 140px;
+    }
+    .form-container {
+      margin-left: 280px; /* ou qualquer valor menor que o normal */
+      transform: translateX(-0px); /* ajusta o quanto você quer mover para a esquerda */
+    }
+
+    #grupologo{
+      transform: translateX(-300px);
+    }
+    #departamento-hover-menu {
+      transform: translateX(-140px);
+      width: 62%;
+    }
+   }
+
+   @media (max-width:1024px){
+    #nav .row {
+      flex-wrap: nowrap;
+      overflow-x: visible;
+      white-space: nowrap;
+   }   
+       #nav .row > .col:nth-of-type(n+6) {
+         display: none;
+       }
+       #nav .col-auto {
+         margin-left: -0px !important; /* Remove aquele margin-left: 180px */
+       }
+
+      .Lançamento1{
+         margin-left: 130px;
+      }
+      .VerMais1 {
+        position: absolute;
+        right: -100px;
+      }
+      .TodosCard .card:nth-child(n+4) {
+        display: none;
+      }
+      .TodosCard .card {
+        margin-left: 0 !important;
+      }
+      .TodosCard2 .card:nth-child(n+4) {
+        display: none;
+      }
+      .TodosCard2 .card {
+        margin-left: 0 !important;
+      }
+
+      .seta-voltar{
+        left: 90px;
+      }
+
+      .seta-avançar{
+        right: 90px;
+      }
+      .icon-circle{
+        width: 120px;
+        height: 50px;
+      }
+
+      .form-container{
+        transform: translateX(-100px);
+      }
+      #grupologo{
+        transform: translateX(-600px)
+      }
+      .super-sale-wrapper,
+      #DescontoMaior,
+      #ImgCadeira,
+      #cadeira,
+      .texto-desconto {
+        position: relative !important;
+        z-index: 1 !important;
+      }
+    
+      .menu-trigger {
+        z-index: 99999 !important;
+        position: relative;
+      }
+    
+      .dropdown-mega-menu {
+        z-index: 99999 !important;
+      }
+      #departamento-hover-menu{
+        transform: translate(-50%,-12px);
+      }
+   }
+ 
+ 
+  
+
+  
+  

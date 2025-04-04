@@ -1,0 +1,368 @@
+@media (max-width: 768px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+      #nav .row {
+        flex-wrap: nowrap;
+        overflow-x: visible;
+        white-space: nowrap;
+     }
+     
+
+    .super-sale-wrapper {
+        background-color: #f0f0f0;
+        width: 100vw;
+        overflow-x: hidden;
+      }
+        #DescontoMaior {
+          box-sizing: border-box;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          background-color: #f0f0f0;
+          width: 100vw;
+          flex-wrap: nowrap;
+          padding: 20px;
+        }
+      
+  
+    #ImgCadeira {
+      margin-right: 15px;
+    }
+  
+    #ImgCadeira img {
+      max-width: 300px;
+      height: auto;
+    }
+  
+    #DescontoMaior h1 {
+      font-size: 40px !important;
+    }
+  
+    #DescontoMaior h1 strong {
+      font-size: 40px !important;
+    }
+  
+    #DescontoMaior p {
+      font-size: 16px !important;
+      letter-spacing: 2px !important;
+      margin-right: 0 !important;
+      text-align: left;
+    }
+  
+    .desconto {
+      font-size: 28px !important;
+      margin-right: 0 !important;
+      text-align: left;
+    }
+
+  
+    #DescontoMaior > div:last-child {
+      margin-top: 0px !important;
+      text-align: left !important;
+    }
+
+    .TodosCard {
+      max-width: 100%;
+      padding: 0 10px;
+      gap: 20px;
+    }
+  
+    .card {
+      min-width: 160px !important;
+      width: 160px !important;
+      flex: 0 0 auto !important;
+      height: 800px !important;
+    }
+  
+    .card img.pessoa {
+      width: 100%;
+      height: auto;
+    }
+  
+    .AreaPreco .NovoPreco,
+    .AreaPreco .Parcelamento,
+    .AreaPreco .OriginalPreco,
+    .AreaPreco .DescontoPedido {
+      font-size: 0.8rem;
+    }
+  
+    .botao-comprar {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+    }
+  
+    .seta-voltar {
+      left: 5px;
+    }
+  
+    .seta-avançar {
+      right: 5px;
+    }
+  
+    #TodosCard .card:first-child {
+      margin-left: 10px;
+    }
+
+    .form-container {
+      transform: translateX(-70px);
+      height: 250px;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .checkbox-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  
+    .checkbox-container a {
+      margin-left: 5px;
+    }
+
+    #grupologo{
+      transform: translateX(-700px);
+    }
+    #departamento-hover-menu{
+      transform: translate(-70%,-20px);
+    }
+  }
+  
+  @media (max-width: 425px) {
+    /* Ajuste geral de fontes e margens */
+    body, html {
+      font-size: 14px;
+    }
+  
+    /* Barra de desconto */
+    #desconto {
+      flex-direction: column;
+      text-align: center;
+      gap: 4px;
+      padding: 5px 10px;
+      height: auto;
+    }
+
+    #nav .row > div {
+      display: none;
+    }
+
+    #nav .row > div:nth-child(1),
+#nav .row > div:nth-child(3) {
+  display: block;
+}
+  /* Ajusta o menu de departamentos para ocupar toda a largura e começar à esquerda */
+  #departamento-hover-menu {
+    min-width: auto;
+    width: 100%;
+    left: 0;
+    transform: translate(-90%,-80px);
+  }
+  .departamento-hover:hover + #departamento-hover-menu {
+    width: 20% !important;
+  }
+  
+
+
+    /* Logo e barra superior */
+    section:nth-of-type(2) {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .search-box {
+      max-width: 90%;
+      margin-top: 10px;
+    }
+  
+    .top-bar {
+      margin-left: 0;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    /* Navegação de departamentos */
+    #nav .row {
+      width: 100% !important;
+      justify-content: flex-start !important;
+      margin: 0 !important;
+      flex-wrap: nowrap;
+      overflow-x: visible;
+      white-space: nowrap;
+      padding-left: 10px !important;
+    }
+  
+   /* #nav .col-auto {
+      margin-left: 220px !important;
+    } */
+  
+    #nav .col {
+      flex: 0 0 auto;
+   /*   padding: 5px 10px; */
+    }
+  
+    .Lançamento1 {
+      margin-left: 15px;
+      margin-top: 30px;
+    }
+  
+    .VerMais1 {
+      margin-top: 30px;
+      margin-right: 120px;
+    }
+  
+    /* Ajustes nos textos principais da Super Sale */
+    .texto-desconto {
+      margin-top: 20px;
+    }
+  
+    #ImgCadeira img {
+      max-width: 180px;
+    }
+  
+    #DescontoMaior h1, 
+    #DescontoMaior h1 strong {
+      font-size: 32px !important;
+    }
+  
+    .desconto {
+      font-size: 22px !important;
+    }
+  
+    /* Cards de produto */
+    .card {
+      width: 90% !important;
+      margin: 0 auto !important;
+      height: auto !important;
+    }
+  
+    .AreaPreco {
+      text-align: left;
+      font-size: 14px;
+    }
+  
+    .botao-comprar {
+      font-size: 14px;
+    }
+  
+    /* Setas de carrossel */
+    .seta-voltar, .seta-avançar {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    /* Footer e formulário */
+    .form-container {
+      margin: 20px auto;
+      transform: none;
+      max-width: 95%;
+      flex-direction: column;
+      align-items: stretch;
+      height: auto;
+    }
+  
+    #grupologo {
+      transform: none;
+      margin: 20px auto;
+      text-align: center;
+    }
+  
+    footer p {
+      padding: 0 10px;
+    }
+  
+    /* Esconde a imagem da direita */
+    .right-content {
+      display: none;
+    }
+  
+    .left-content {
+      padding: 0 20px;
+    }
+  
+    .info-block {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      gap: 15px;
+      justify-content: flex-start;
+    }
+  
+    .icon-circle {
+      margin: 0;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .icon-circle i {
+      font-size: 36px;
+    }
+  
+    .info-text {
+      max-width: 100%;
+    }
+  } /* <- essa chave fecha o @media corretamente aqui */
+  
+
+  
+
+  @media (max-width: 375px) {
+    #carrinho-container {
+      display: none;
+    }
+    .texto-desconto h1 {
+      font-size: 32px !important;
+      line-height: 1.1 !important;
+    }
+
+    #nav .row{
+      transform: translateX(10px);
+    }
+    #departamento-hover-menu {
+      transform: translate(-130%,-80px);
+    }
+  
+    .texto-desconto h1 strong {
+      display: block;
+      font-size: 32px !important;
+    }
+  
+    .texto-desconto h1 {
+      white-space: nowrap;
+    }
+  
+    #DescontoMaior p {
+      font-size: 14px !important;
+      letter-spacing: 1px !important;
+      text-align: left;
+    }
+  
+    .desconto {
+      font-size: 20px !important;
+    }
+    
+  }
+
+  @media (max-width:320px){
+    .top-bar {
+      margin-left: -30px;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    #nav .row {
+      transform: translateX(25px);
+    }
+    #nav .row > div:nth-child(1) {
+      transform: translateX(10px);
+    }
+  }
+  
+  
+  
+  
