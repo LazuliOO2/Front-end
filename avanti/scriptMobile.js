@@ -6,7 +6,7 @@ const logo = document.getElementById('logo');
 const busca = document.getElementById('busca');
 
 userInfo.addEventListener('click', () => {
-  if (window.innerWidth <= 375) {
+  if (window.innerWidth <= 425) {
     // Se houver texto de busca, apaga
     if (busca.textContent.trim() !== '') {
       busca.textContent = '';
@@ -23,13 +23,13 @@ userInfo.addEventListener('click', () => {
 
 
 input.addEventListener('focus', () => {
-  if (window.innerWidth <= 375) {
+  if (window.innerWidth <= 425) {
     logo.style.display = 'none';
   }
 });
 
 input.addEventListener('blur', () => {
-  if (window.innerWidth <= 375 && input.value.trim() === '') {
+  if (window.innerWidth <= 425 && input.value.trim() === '') {
     logo.style.display = 'block';
   }
 });
@@ -40,7 +40,7 @@ function Buscar() {
     busca.textContent = 'Por favor, digite algo.';
   } else {
     busca.textContent = `Você buscou por: ${valor}`;
-    if (window.innerWidth <= 375) {
+    if (window.innerWidth <= 425) {
       logo.style.display = 'block';
       input.blur(); // tira o foco
     }

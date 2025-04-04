@@ -1,3 +1,9 @@
+main, section {
+  position: relative;
+  z-index: 1;
+}
+
+
 #desconto{
     background-color: rgb(0,92,255);
     height: 30px;
@@ -32,7 +38,7 @@
     color: #333;
     cursor: pointer;
   }
-  
+
   .top-bar {
     display: flex;
     align-items: center;
@@ -68,6 +74,10 @@
     font-size: 12px;
     font-weight: bold;
   }
+  #DescontoMaior, #ImgCadeira, .super-sale-wrapper {
+    position: relative;
+    z-index: 1;
+  }
   
  #DescontoMaior{
     height: 500px;
@@ -75,7 +85,18 @@
  }
  .texto-desconto{
   margin-top: 100px;
- }
+}
+  
+  nav {
+    position: relative;
+    z-index: 1000;
+  }
+  #nav .row {
+    /* se quiser centralizar todos os itens */
+    justify-content: center;
+  }
+  
+
  #cadeira{
 height:500px;
  }
@@ -385,44 +406,186 @@ height:500px;
   margin-left: 880px;
 }
 
-.dropdown-menu-custom {
+.dropdown-mega-menu {
   display: none;
   position: absolute;
-  top: 100%; 
+  top: 100%;
   left: 0;
   background-color: #fff;
-  padding: 20px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  min-width: 600px;
+  z-index: 99999;
+  padding: 20px;
+  min-width: 900px;
   border-radius: 8px;
 }
 
-/* Mostra o dropdown ao passar o mouse */
-.menu-trigger:hover .dropdown-menu-custom {
+
+.menu-trigger:hover .dropdown-mega-menu {
   display: block;
 }
 
-/* Estilização interna */
-.dropdown-menu-custom h6 {
+.departamentos {
+  list-style: none;
+  padding: 0 20px 0 0;
+  margin: 0;
+  width: 180px;
+  border-right: 1px solid #eee;
+}
+
+.departamento-item {
+  padding: 10px;
+  cursor: pointer;
   font-weight: bold;
 }
 
-.dropdown-menu-custom ul {
+.departamento-item:hover {
+  background-color: #f0f0f0;
+}
+
+.categorias {
+  display: flex;
+  padding: 0 20px;
+  border-right: 1px solid #eee;
+  flex-grow: 1;
+}
+
+.categoria-coluna {
+  margin-right: 20px;
+}
+
+.categoria-coluna h6 {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.categoria-coluna p {
+  margin: 4px 0;
+  cursor: pointer;
+}
+
+.categoria-coluna p:hover {
+  text-decoration: underline;
+}
+
+.imagem-banner {
+  width: 180px;
+  padding-left: 20px;
+}
+
+.imagem-banner img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+/* Começo departamento */
+.department-wrapper {
+  position: relative;
+  display: inline-block; /* Garante que o container se ajuste ao conteúdo */
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 10px;
+  width: 300px; /* Ajuste conforme o layout desejado */
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.department-wrapper:hover .submenu {
+  display: flex;
+}
+
+.categories ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.dropdown-menu-custom ul li {
+.categories li {
   padding: 5px 0;
+}
+
+.mug img {
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+
+.menu-trigger {
+  /* Já deixe a borda definida (aqui, transparente) */
+  border: 2px solid transparent;
+  padding: 10px;
+  transform: translateY(-10px);
+  box-sizing: border-box; /* Importante para o padding não inflar o elemento */
+  border-radius: 6px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.menu-trigger:hover {
+  background-color: rgb(0, 92, 255);
+  border-color: rgb(0, 92, 255); /* agora a borda fica visível, mas não muda tamanho */
+  color: black;
+}
+.menu-trigger {
+  display: inline-flex; /* ou inline-block */
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap; /* se quiser que o texto não quebre linha */
+  /* ... */
+}
+
+#departamento-hover-menu {
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  z-index: 999;
+  min-width: 600px;
+  display: none;
+  width: 55%;
+}
+
+#departamento-hover-menu .categorias {
+  display: flex;
+  gap: 20px;
+}
+
+.categoria-coluna h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.categoria-coluna p {
+  margin: 0;
+  font-size: 14px;
   cursor: pointer;
 }
 
-.dropdown-menu-custom ul li:hover {
-  text-decoration: underline;
+.imagem-banner img {
+  max-width: 150px;
+  height: auto;
 }
-.menu-trigger:hover .dropdown-menu-custom {
-  display: block;
+
+
+
+.departamento-hover {
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  transform: translateY(-5px);
 }
+
+.departamento-hover:hover {
+  background-color: rgb(0, 92, 255); /* Azul igual */
+  color: white; /* Deixa o texto branco no hover */
+}
+
+
 

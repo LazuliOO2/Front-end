@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleNotebook.css">
     <link rel="stylesheet" href="styleMobile.css">
@@ -53,49 +54,60 @@
   <div id="nav" class="container-fluid d-flex justify-content-center">
     <div class="row ps-5">
 
-      <!-- BOTÃO "Todas as categorias" + MENU -->
-      <div class="col-auto d-flex align-items-center position-relative menu-trigger" style="margin-left: 180px;">
-        <span class="fw-bold">
-          <i class="fas fa-bars" style="font-size: 16px; margin-right: 8px;"></i>
-          Todas as categorias
+      <!-- BOTÃO "Todas as Categorias" -->
+      <div class="col-auto d-flex align-items-center position-relative menu-trigger " >
+        <span class="fw-bold text-nowrap">
+          <i class="fas fa-bars" style="font-size: 16px;"></i>
+          Todas as Categorias
         </span>
 
-        <!-- DROPDOWN -->
-        <div class="dropdown-menu-custom">
-          <div class="row">
-            <div class="col">
-              <h6>Departamento</h6>
-              <ul>
-                <li>Categoria</li>
-                <li>Categoria</li>
-                <li>Categoria</li>
-              </ul>
+        <!-- DROPDOWN MULTINÍVEL -->
+        <div class="dropdown-mega-menu">
+          <div class="d-flex">
+
+            <!-- Coluna: Lista de Departamentos -->
+            <ul class="departamentos">
+              <li class="departamento-item" data-index="0">Departamento 1 ></li>
+              <li class="departamento-item" data-index="1">Departamento 2 ></li>
+              <li class="departamento-item" data-index="2">Departamento 3 ></li>
+              <li class="departamento-item" data-index="3">Departamento 4 ></li>
+            </ul>
+
+            <!-- Coluna: Categorias -->
+            <div class="categorias" id="categorias-container">
+              <!-- Conteúdo será atualizado dinamicamente -->
             </div>
-            <div class="col">
-              <h6>Departamento</h6>
-              <ul>
-                <li>Categoria</li>
-                <li>Categoria</li>
-                <li>Categoria</li>
-              </ul>
+
+            <!-- Coluna: Imagem promocional -->
+            <div class="imagem-banner">
+              <img id="banner-img" src="img/canecaCozinha.png" alt="Banner" />
             </div>
           </div>
         </div>
       </div>
 
-      <!-- DEMAIS DEPARTAMENTOS -->
-      <div class="col">Departamento</div>
-      <div class="col">Departamento</div>
-      <div class="col">Departamento</div>
-      <div class="col">Departamento</div>
-      <div class="col">Departamento</div>
-      <div class="col">Departamento</div>
-      <div class="col">Departamento</div>
-      <div class="col">Departamento</div>
-      
+     <!-- Outros departamentos fora do menu -->
+      <!-- Menu hover simplificado (só categorias e imagem) -->
+<div id="departamento-hover-menu" class="dropdown-mega-menu" style="display: none;">
+  <div class="d-flex">
+    <div class="categorias" id="hover-categorias-container"></div>
+    <div class="imagem-banner">
+      <img id="hover-banner-img" src="img/canecaCozinha.png" alt="Banner" />
     </div>
   </div>
+</div>
+
+     <div class="col departamento-hover">Departamento</div>
+     <div class="col departamento-hover">Departamento</div>
+     <div class="col departamento-hover">Departamento</div>
+     <div class="col departamento-hover">Departamento</div>
+     <div class="col departamento-hover">Departamento</div>
+     <div class="col departamento-hover">Departamento</div>
+     <div class="col departamento-hover">Departamento</div>
+       
 </nav>
+
+    
 
 <section>
   <div class="super-sale-wrapper">

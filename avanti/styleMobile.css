@@ -5,6 +5,12 @@
         padding: 0;
         overflow-x: hidden;
       }
+      #nav .row {
+        flex-wrap: nowrap;
+        overflow-x: visible;
+        white-space: nowrap;
+     }
+     
 
     .super-sale-wrapper {
         background-color: #f0f0f0;
@@ -121,6 +127,9 @@
     #grupologo{
       transform: translateX(-700px);
     }
+    #departamento-hover-menu{
+      transform: translate(-70%,-20px);
+    }
   }
   
   @media (max-width: 425px) {
@@ -137,7 +146,28 @@
       padding: 5px 10px;
       height: auto;
     }
+
+    #nav .row > div {
+      display: none;
+    }
+
+    #nav .row > div:nth-child(1),
+#nav .row > div:nth-child(3) {
+  display: block;
+}
+  /* Ajusta o menu de departamentos para ocupar toda a largura e começar à esquerda */
+  #departamento-hover-menu {
+    min-width: auto;
+    width: 100%;
+    left: 0;
+    transform: translate(-90%,-80px);
+  }
+  .departamento-hover:hover + #departamento-hover-menu {
+    width: 20% !important;
+  }
   
+
+
     /* Logo e barra superior */
     section:nth-of-type(2) {
       flex-direction: column;
@@ -158,25 +188,33 @@
   
     /* Navegação de departamentos */
     #nav .row {
+      width: 100% !important;
+      justify-content: flex-start !important;
+      margin: 0 !important;
       flex-wrap: nowrap;
-      overflow-x: auto;
+      overflow-x: visible;
       white-space: nowrap;
+      padding-left: 10px !important;
     }
+  
+   /* #nav .col-auto {
+      margin-left: 220px !important;
+    } */
   
     #nav .col {
       flex: 0 0 auto;
-      padding: 5px 10px;
+   /*   padding: 5px 10px; */
     }
+  
     .Lançamento1 {
       margin-left: 15px;
       margin-top: 30px;
     }
-
-    .VerMais1{
+  
+    .VerMais1 {
       margin-top: 30px;
       margin-right: 120px;
     }
-    
   
     /* Ajustes nos textos principais da Super Sale */
     .texto-desconto {
@@ -187,7 +225,8 @@
       max-width: 180px;
     }
   
-    #DescontoMaior h1, #DescontoMaior h1 strong {
+    #DescontoMaior h1, 
+    #DescontoMaior h1 strong {
       font-size: 32px !important;
     }
   
@@ -236,44 +275,41 @@
     footer p {
       padding: 0 10px;
     }
-
+  
     /* Esconde a imagem da direita */
-/* Esconde a imagem */
-.right-content {
-  display: none;
-}
+    .right-content {
+      display: none;
+    }
+  
+    .left-content {
+      padding: 0 20px;
+    }
+  
+    .info-block {
+      flex-direction: row;
+      align-items: flex-start;
+      text-align: left;
+      gap: 15px;
+      justify-content: flex-start;
+    }
+  
+    .icon-circle {
+      margin: 0;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .icon-circle i {
+      font-size: 36px;
+    }
+  
+    .info-text {
+      max-width: 100%;
+    }
+  } /* <- essa chave fecha o @media corretamente aqui */
+  
 
-/* Deixa os blocos centralizados no container */
-.left-content {
-  padding: 0 20px;
-}
-
-/* Ícone à esquerda, texto à direita */
-.info-block {
-  flex-direction: row;
-  align-items: flex-start;
-  text-align: left;
-  gap: 15px;
-  justify-content: flex-start;
-}
-
-/* Ícone com tamanho ajustado */
-.icon-circle {
-  margin: 0;
-  width: 40px;
-  height: 40px;
-}
-
-.icon-circle i {
-  font-size: 36px;
-}
-
-/* Texto com largura máxima e centralizado no container */
-.info-text {
-  max-width: 100%;
-}
-
-  }
+  
 
   @media (max-width: 375px) {
     #carrinho-container {
@@ -282,6 +318,13 @@
     .texto-desconto h1 {
       font-size: 32px !important;
       line-height: 1.1 !important;
+    }
+
+    #nav .row{
+      transform: translateX(10px);
+    }
+    #departamento-hover-menu {
+      transform: translate(-130%,-80px);
     }
   
     .texto-desconto h1 strong {
@@ -310,6 +353,13 @@
       margin-left: -30px;
       justify-content: flex-start;
       gap: 10px;
+    }
+
+    #nav .row {
+      transform: translateX(25px);
+    }
+    #nav .row > div:nth-child(1) {
+      transform: translateX(10px);
     }
   }
   

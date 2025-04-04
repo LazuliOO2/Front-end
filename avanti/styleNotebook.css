@@ -20,14 +20,18 @@
     #grupologo{
       transform: translateX(-300px);
     }
+    #departamento-hover-menu {
+      transform: translateX(-140px);
+      width: 62%;
+    }
    }
 
    @media (max-width:1024px){
-      #nav .row {
-         flex-wrap: nowrap;
-         overflow-x: auto;
-         white-space: nowrap;
-       }
+    #nav .row {
+      flex-wrap: nowrap;
+      overflow-x: visible;
+      white-space: nowrap;
+   }   
        #nav .row > .col:nth-of-type(n+6) {
          display: none;
        }
@@ -66,6 +70,26 @@
       }
       #grupologo{
         transform: translateX(-600px)
+      }
+      .super-sale-wrapper,
+      #DescontoMaior,
+      #ImgCadeira,
+      #cadeira,
+      .texto-desconto {
+        position: relative !important;
+        z-index: 1 !important;
+      }
+    
+      .menu-trigger {
+        z-index: 99999 !important;
+        position: relative;
+      }
+    
+      .dropdown-mega-menu {
+        z-index: 99999 !important;
+      }
+      #departamento-hover-menu{
+        transform: translate(-50%,-12px);
       }
    }
  
