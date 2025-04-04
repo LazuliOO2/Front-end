@@ -50,6 +50,7 @@ Este projeto marcou uma evolução no uso de animações com CSS e transições 
 - A versão responsiva está implementada e distribuída entre os arquivos CSS específicos.
 
 ## 📂 Estrutura do Projeto
+
 ```
 
 ├──  📄 README.md  → Documentação principal
